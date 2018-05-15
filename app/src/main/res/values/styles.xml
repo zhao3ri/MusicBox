@@ -1,0 +1,21 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!--<item name="android:windowNoTitle">true</item>-->
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <declare-styleable name="LrcView">
+        <attr name="lrcMode" format="enum">
+            <enum name="DEFAULT" value="0"/>
+            <enum name="KARAOKE" value="1"/>
+        </attr>
+        <attr name="lightColor" format="color|reference"/>
+        <attr name="darkColor" format="color|reference"/>
+    </declare-styleable>
+
+</resources>

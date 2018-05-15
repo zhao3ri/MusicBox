@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/rl_music_message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@+id/layout_btn">
+
+        <ImageView
+            android:id="@+id/iv_album_music"
+            android:layout_width="@dimen/layout_play_ctrl_img_height"
+            android:layout_height="@dimen/layout_play_ctrl_img_height"
+            android:layout_marginLeft="@dimen/default_medium_margin"
+            android:src="@drawable/icon_default_music" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/default_small_margin"
+            android:layout_marginRight="@dimen/default_small_margin"
+
+            android:layout_toRightOf="@id/iv_album_music">
+
+            <TextView
+                android:id="@+id/tv_music_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:text="@string/empty_music_title"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/text_music_name_size" />
+
+            <TextView
+                android:id="@+id/tv_music_artist"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_music_name"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/text_artist_name_size" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/layout_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true">
+
+        <Button
+            android:id="@+id/btn_previous"
+            android:layout_width="@dimen/layout_play_ctrl_img_height"
+            android:layout_height="@dimen/layout_play_ctrl_img_height"
+            android:background="@drawable/btn_previous" />
+
+        <Button
+            android:id="@+id/btn_play"
+            android:layout_width="@dimen/layout_play_ctrl_img_height"
+            android:layout_height="@dimen/layout_play_ctrl_img_height"
+            android:layout_toRightOf="@id/btn_previous"
+            android:background="@drawable/btn_pause" />
+
+        <Button
+            android:id="@+id/btn_next"
+            android:layout_width="@dimen/layout_play_ctrl_img_height"
+            android:layout_height="@dimen/layout_play_ctrl_img_height"
+            android:layout_toRightOf="@id/btn_play"
+            android:background="@drawable/btn_next" />
+
+
+        <Button
+            android:id="@+id/btn_queue"
+            android:layout_width="@dimen/layout_play_ctrl_queue_height"
+            android:layout_height="@dimen/layout_play_ctrl_queue_height"
+            android:layout_centerInParent="true"
+            android:layout_toRightOf="@id/btn_next"
+            android:background="@drawable/btn_queue"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/btn_method"
+            android:layout_width="@dimen/layout_play_ctrl_img_height"
+            android:layout_height="@dimen/layout_play_ctrl_img_height"
+            android:layout_centerInParent="true"
+            android:layout_toRightOf="@id/btn_next"
+            android:background="@drawable/btn_method_queue"
+            android:visibility="gone" />
+    </RelativeLayout>
+</RelativeLayout>

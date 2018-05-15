@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <gradient
+        android:angle="90"
+        android:endColor="@color/color_album_item_end_color"
+        android:centerColor="@color/color_album_item_start_color"
+        android:startColor="@color/color_album_item_start_color" />
+    <stroke
+        android:width="@dimen/album_item_stroke_width"
+        android:color="@android:color/black" />
+    <corners android:radius="@dimen/default_medium_margin" />
+
+</shape>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <GridView
+        android:id="@+id/gv_album"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:horizontalSpacing="@dimen/default_normal_margin"
+        android:numColumns="2"
+        android:verticalSpacing="@dimen/default_normal_margin"
+        android:paddingTop="@dimen/default_medium_margin"
+        android:paddingBottom="@dimen/default_medium_margin"/>
+
+    <RelativeLayout
+        android:id="@+id/rl_empty"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone">
+
+        <include layout="@layout/view_empty_list" />
+    </RelativeLayout>
+</RelativeLayout>

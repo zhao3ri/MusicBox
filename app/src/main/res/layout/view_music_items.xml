@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_default_list_items"
+    android:descendantFocusability="blocksDescendants"
+    android:padding="@dimen/default_normal_margin">
+
+    <TextView
+        android:id="@+id/tv_music_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_marginRight="@dimen/default_medium_margin"
+        android:layout_toLeftOf="@+id/tv_music_duration"
+        android:singleLine="true"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/text_music_item_title_size" />
+
+    <TextView
+        android:id="@+id/tv_music_album"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_music_title"
+        android:layout_marginTop="@dimen/default_medium_margin"
+        android:singleLine="true"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/text_music_item_artist_size" />
+
+    <TextView
+        android:id="@+id/tv_music_duration"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:singleLine="true"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/text_music_item_duration_size" />
+
+</RelativeLayout>

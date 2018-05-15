@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="@dimen/album_item_layout_width"
+        android:layout_height="@dimen/album_item_layout_width"
+        android:background="@drawable/bg_album_item"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:paddingBottom="@dimen/default_medium_margin"
+        android:paddingLeft="@dimen/default_medium_margin"
+        android:paddingRight="@dimen/default_medium_margin"
+        android:paddingTop="@dimen/default_medium_margin">
+
+        <ImageView
+            android:id="@+id/iv_album_img"
+            android:layout_width="@dimen/album_item_image_width"
+            android:layout_height="@dimen/album_item_image_width"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/bg_default_album"
+            android:scaleType="centerInside" />
+
+        <TextView
+            android:id="@+id/tv_album_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/iv_album_img"
+            android:layout_centerHorizontal="true"
+            android:maxLines="1"
+            android:textSize="@dimen/text_album_item_name_size"
+            android:textColor="@android:color/white" />
+
+        <TextView
+            android:id="@+id/tv_album_artist"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_album_name"
+            android:layout_centerHorizontal="true"
+            android:textSize="@dimen/text_album_item_artist_size"
+            android:maxLines="1"
+            android:textColor="@android:color/white" />
+    </RelativeLayout>
+
+</RelativeLayout>

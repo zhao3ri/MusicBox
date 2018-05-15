@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="color_bg_play_ctrl">#88000000</color>
+    <color name="color_default_ripple">#66767676</color>
+    <color name="color_add_queue">#aab9b9be</color>
+    <color name="color_add_queue_ripple">#66c9c9ce</color>
+    <color name="color_album_item_start_color">#aa000000</color>
+    <color name="color_album_item_end_color">#66000000</color>
+    <color name="color_delete_queue">#b0ff0c0c</color>
+    <color name="color_bg_artist_item">#33ffffff</color>
+    <color name="color_bg_album_detail">#11ffffff</color>
+    <color name="color_playing_center_color">#aa303F9F</color>
+    <color name="color_playing_lrc">#31c17d</color>
+</resources>
